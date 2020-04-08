@@ -147,7 +147,3 @@ input {
     border: none;
     cursor:text;
     }
-
-input:hover {
-    background-color: yellow;
-}

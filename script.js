@@ -4,12 +4,12 @@ const container = document.querySelector('.container');
 draggables.forEach(draggable => {
     draggable.addEventListener('dragstart', () => {
         draggable.classList.add('dragging');
-    })
+    });
 
     draggable.addEventListener('dragend', () => {
         draggable.classList.remove('dragging');
-    })
-})
+    });
+});
 
 
 container.addEventListener('dragover', e => {
@@ -29,7 +29,7 @@ function getDragAfterElement(container, y) {
 
     return draggableElements.reduce((closest, child) => {
         const box = child.getBoundingClientRect()
-        const offset = y - box.top - box.height / 2 
+        const offset = y - box.top - box.height / 2
         if (offset < 0 && offset > closest.offset) {
             return { offset: offset, element: child }
         } else {
@@ -55,13 +55,13 @@ const pushToHTML = (array) => {
 }
 
 const sortDown = () => {
-    array = collectTexts();
+    let array = collectTexts();
     array.sort();
     pushToHTML(array);
 }
 
 const sortUp = () => {
-    array = collectTexts();
+    let array = collectTexts();
     array.reverse();
     pushToHTML(array);
 }

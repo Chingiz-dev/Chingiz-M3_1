@@ -1,0 +1,149 @@
+
+main {
+    width: 336px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: Roboto;
+}
+
+
+.form-top {
+    height: 28px;
+    background-color: #FFDC40;
+    border-radius: 9px 9px 0 0;
+}
+
+#header-container {
+    padding-top: 10px;
+    font-style: normal;
+    line-height: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.sorter {
+    padding-left: 270px;
+    padding-top: 10px;
+    height: 25px;
+}
+
+.sort-up {
+    background: url(./images/sortwhiteup.png);
+    width: 25px;
+    height: 15px;
+    cursor:pointer;
+}
+
+.sort-up:hover {
+    background: url(./images/sortblackup.png);
+    width: 25px;
+    height: 15px;
+}
+.sort-down {
+    background: url(./images/sortwhitedown.png);
+    width: 25px;
+    height: 15px;
+    cursor:pointer;
+}
+
+.sort-down:hover {
+    background: url(./images/sortblackdown.png);
+    width: 25px;
+    height: 15px;
+}
+
+.container {
+    min-height: 40px;
+    width: 286px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+
+.input-container {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 40px;
+}
+
+.input-container.dragging {
+    opacity: .5;
+    background-color:goldenrod;
+}
+
+.mover {
+    padding:0 10px;
+    font-size: 30px;
+    color: #C4C4C4;
+    cursor:grab;
+}
+
+.mover:hover {
+    padding: 0 10px;
+    font-size: 30px;
+    color: #833AE0;
+}
+
+
+
+.deliter {
+    background: url(./images/delete.png);
+    width: 20px;
+    height: 20px;
+    margin: 9px;
+    cursor:pointer;
+}
+
+.deliter:hover {
+    background: url(./images/deleteblue.png);
+    width: 20px;
+    height: 20px;
+    margin: 9px;
+}
+
+.new-input {
+    margin: 18px auto;
+    width: 150px;
+    height: 42px;
+    display: flex;
+    flex-flow: row nowrap;
+    font-style: normal;
+    font-weight: normal;
+    border-radius: 71px;
+    background-color: #833AE0;
+    cursor:pointer;
+}
+
+.new-input-plus {
+    text-align: center;
+    line-height: 42px;
+    border-radius: 71px;
+    width: 42px;
+    font-size: 14px;
+    color: white;
+    background-color: #9953F1;
+}
+
+.new-input-text { 
+    padding-left: 10px;
+    line-height: 42px;
+    font-size: 14px;
+    line-height: 16px;
+    color: white;
+}
+
+input {
+    margin-top: 5px;
+    height: 28px;
+    width: 205px;
+    border: none;
+    cursor:text;
+    }

@@ -79,11 +79,6 @@ main {
     background-color:goldenrod;
 }
 
-.input-container.dragging input {
-    opacity: .5;
-    background-color:goldenrod;
-}
-
 input {
     margin-top: 5px;
     height: 28px;
@@ -104,8 +99,6 @@ input {
     font-size: 30px;
     color: #833AE0;
 }
-
-
 
 .deliter {
     background: url(./images/delete.png);

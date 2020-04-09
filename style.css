@@ -79,6 +79,19 @@ main {
     background-color:goldenrod;
 }
 
+.input-container.dragging input {
+    opacity: .5;
+    background-color:goldenrod;
+}
+
+input {
+    margin-top: 5px;
+    height: 28px;
+    width: 205px;
+    border: none;
+    cursor:text;
+    }
+
 .mover {
     padding:0 10px;
     font-size: 30px;

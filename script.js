@@ -7,7 +7,7 @@ const removeDrag = (e) => {
 }
 
 function getDragAfterElement(container, y) {
-    const draggableElements = [...container.querySelectorAll('.input-container:not(.dragging)')]
+    const draggableElements = [...container.querySelectorAll('.input-container:not(.dragging)')];
     return draggableElements.reduce((closest, child) => {
         const box = child.getBoundingClientRect();
         const offset = y - box.top - box.height / 2;
@@ -16,17 +16,16 @@ function getDragAfterElement(container, y) {
         } else {
             return closest;
         }
-    }, { offset: Number.NEGATIVE_INFINITY }).element
-}
+    }, { offset: Number.NEGATIVE_INFINITY }).element}
 
 const nestToContainer = (e) => {
-    e.preventDefault()
-    const afterElement = getDragAfterElement(container, e.clientY)
-    const draggable = document.querySelector('.dragging')
+    e.preventDefault();
+    const afterElement = getDragAfterElement(container, e.clientY);
+    const draggable = document.querySelector('.dragging');
     if (afterElement == null) {
-        container.appendChild(draggable)
+        container.appendChild(draggable);
     } else {
-        container.insertBefore(draggable, afterElement)
+        container.insertBefore(draggable, afterElement);
     }
 }
 
